@@ -42,7 +42,7 @@ public class TextColorFragment extends Fragment {
             sharedViewModel.setRed(seekBarRed.getProgress());
             sharedViewModel.setGreen(seekBarGreen.getProgress());
             sharedViewModel.setBlue(seekBarBlue.getProgress());
-
+            sharedViewModel.setColor(seekBarRed.getProgress(),seekBarGreen.getProgress(),seekBarBlue.getProgress());
 
         });
 
