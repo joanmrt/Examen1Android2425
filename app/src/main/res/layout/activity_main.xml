@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="#003467">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar"
+        android:orientation="horizontal"
+        android:background="#1750A3"
+        >
+
+        <TextView
+            android:id="@+id/SunsetText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:paddingTop="7sp"
+            android:paddingLeft="13sp"
+            android:textColor="@color/white"
+            android:text="Posta de Sol" />
+
+        <ImageView
+            android:id="@+id/moon_icon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="right"
+            android:clickable="true"
+            android:contentDescription="moon"
+            android:src="@drawable/ic_launcher_foreground" />
+
+        <ImageView
+            android:id="@+id/palette_icon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="right"
+            android:clickable="true"
+            android:contentDescription="palette"
+            android:src="@drawable/palette_foreground" />
+
+
+    </LinearLayout>
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentContainerSunset"
+        android:name="com.example.examen2425.SunsetFragment"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        tools:layout="@layout/sunset_fragment" />
+
+
+</LinearLayout>
