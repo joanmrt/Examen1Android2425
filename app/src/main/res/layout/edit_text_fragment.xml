@@ -11,7 +11,7 @@
         android:layout_centerInParent="true"/>
 
     <SeekBar
-        android:id="@+id/seekBar"
+        android:id="@+id/seekBarSize"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
@@ -22,7 +22,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Set Text"
-        android:layout_below="@+id/seekBar"
+        android:layout_below="@+id/seekBarSize"
         android:layout_centerInParent="true"
         android:backgroundTint="@color/grey"/>
 
