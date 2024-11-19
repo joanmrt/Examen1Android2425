@@ -5,4 +5,5 @@
     <color name="blue_sky">#0D9FBC</color>
     <color name="sunset_sky">#F37820</color>
     <color name="night_sky">#0B2125</color>
+    <color name="grey">#818181</color>
 </resources>
